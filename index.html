@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="todo-list">
-            <h3>Todo List</h3>
-            <form action="" method="POST" class="todo-add-task">
-                <input type="text" name="task-input" class="task-input" placeholder="Add New Task">
-                <input type="submit" class="add-task" value="+">
-            </form>
-            <ul class="todo-tasks">
-                <li>Finishing Html Course <span class="task-delete">delete</span><span class="task-load">loading</span><span class="task-comp">Complete</span></li>
-                <li>Learning Css Course <span class="task-delete">delete</span><span class="task-load">loading</span><span class="task-comp">Complete</span></li>
-                <li>Learning JQuery Course <span class="task-delete">delete</span><span class="task-load">loading</span><span class="task-comp">Complete</span></li>
-                <li>Applying on JS Course <span class="task-delete">delete</span><span class="task-load">loading</span><span class="task-comp">Complete</span></li>
-                <li>Calling With My Friend <span class="task-delete">delete</span><span class="task-load">loading</span><span class="task-comp">Complete</span></li>
-                <li>Having Breakfast <span class="task-delete">delete</span><span class="task-load">loading</span><span class="task-comp">Complete</span></li>
-            </ul>
+      <div class="todo-list">
+        <h3>Todo List</h3>
+        <form action="" method="POST" class="todo-add-task">
+          <input
+            type="text"
+            name="task-input"
+            class="task-input"
+            placeholder="Add New Task"
+          />
+          <input type="submit" class="add-task" value="+" />
+        </form>
+        <ul class="todo-tasks">
+          <li>
+            Finishing Html Course <span class="task-delete">delete</span
+            ><span class="task-load">loading</span
+            ><span class="task-comp">Complete</span>
+          </li>
+          <li>
+            Learning Css Course <span class="task-delete">delete</span
+            ><span class="task-load">loading</span
+            ><span class="task-comp">Complete</span>
+          </li>
+          <li>
+            Learning JQuery Course <span class="task-delete">delete</span
+            ><span class="task-load">loading</span
+            ><span class="task-comp">Complete</span>
+          </li>
+          <li>
+            Applying on JS Course <span class="task-delete">delete</span
+            ><span class="task-load">loading</span
+            ><span class="task-comp">Complete</span>
+          </li>
+          <li>
+            Calling With My Friend <span class="task-delete">delete</span
+            ><span class="task-load">loading</span
+            ><span class="task-comp">Complete</span>
+          </li>
+          <li>
+            Having Breakfast <span class="task-delete">delete</span
+            ><span class="task-load">loading</span
+            ><span class="task-comp">Complete</span>
+          </li>
+        </ul>
 
-            <div class="tasks-stats">
-                <span class="tasks-num">Deleted: <span>0</span></span>
-                <span class="tasks-completed">Completed: <span>0</span></span>
-                <span class="tasks-loading">Loading: <span>0</span></span>
-            </div>
+        <div class="tasks-stats">
+          <span class="tasks-num">Deleted: <span>0</span></span>
+          <span class="tasks-completed">Completed: <span>0</span></span>
+          <span class="tasks-loading">Loading: <span>0</span></span>
         </div>
+      </div>
     </div>
-    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
     <script src="plugins.js"></script>
-</body>
+  </body>
 </html>
