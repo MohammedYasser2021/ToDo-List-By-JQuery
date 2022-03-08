@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    background-color: #777;
+}
+/* start todo list */
+.todo-list{
+    width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+.todo-list h3{
+    padding: 15px;
+    border-bottom: 2px solid #969696;
+    background-color: #efefef;
+    text-align: center;
+    font-size: 25px;
+}
+.todo-tasks{
+    list-style: none;
+}
+.todo-tasks li {
+    padding: 15px 20px;
+    border-bottom: 1px dashed #ccc;
+    color: #fff;
+    background-color:lightslategray;
+    overflow: hidden;
+}
+ .task-input{
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #484848;
+    padding: 15px;
+    font-family: inherit;
+}
+.tasks-stats{
+    background-color: slategrey;
+    padding: 10px;
+    overflow: hidden;
+}
+.tasks-stats .tasks-num{
+    float: left;
+    font-size: 14px;
+}
+.tasks-stats .tasks-num span{
+    background-color: crimson;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.tasks-stats .tasks-completed{
+    float: right;
+    font-size: 14px;
+}
+.tasks-stats .tasks-loading{
+    margin-left: 210px;
+    font-size: 14px;
+}
+.tasks-stats .tasks-loading span{
+    background-color: #ff9f43;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.tasks-stats .tasks-completed span{
+    background-color: rgb(11, 241, 69);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.todo-tasks li .task-delete{
+    float: right;
+    background-color: crimson;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.todo-tasks li .done{
+    color:rgb(11, 241, 69);
+    margin-right: 10px;
+}
+.todo-tasks li .loading{
+    color:#ff9f43;
+    margin-right: 10px;
+}
+.todo-tasks li .task-comp{
+    float: right;
+    background-color:rgb(87, 241, 87);
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.todo-tasks li .task-load{
+    float: right;
+    background-color:#ff9f43;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.todo-add-task{
+    position: relative
+}
+.add-task{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    background-color:royalblue;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+.add-task:hover{
+    animation: rotate 0.3s linear ;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+/* end todo list */
