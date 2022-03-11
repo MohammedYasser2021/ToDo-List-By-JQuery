@@ -5,7 +5,12 @@ $('.todo-add-task').on('submit', function (e) {
 
   if (newTask.val() !== '') {
     $(
-      `<li>${newTask.val()}<span class="task-delete">delete</span><span class="task-comp">Complete</span></li>`,
+      `<li>
+      ${newTask.val()}
+      <span class="task-delete">delete</span>
+      <span class="task-load">loading</span>
+      <span class="task-comp">Complete</span>
+      </li>`,
     ).prependTo('.todo-tasks')
   }
   newTask.val('')
